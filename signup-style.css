@@ -1,0 +1,171 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    min-height: 100vh;
+    /* ensure full height */
+    background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?_gl=1*zdndey*_ga*MTMwMDE0ODA1MS4xNzU4MDgyMjc0*_ga_8JE65Q40S6*czE3NTkyMzgyMTQkbzIkZzEkdDE3NTkyMzg3MTAkajEzJGwwJGgw");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navbar {
+    background-color: rgb(14, 14, 71);
+    /* background-color: #131A22; */
+    height: 9vh;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+#logo {
+    width: 150px;
+    position: relative;
+    bottom: 30%;
+    height: 70px;
+
+}
+
+a:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.854);
+    font-size: large;
+}
+
+#navtags {
+    position: relative;
+    top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_btns {
+    padding: 2px;
+    width: 6vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    /* background-color: rgb(0, 81, 255); */
+    background-color: #42b72a;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.nav_btns:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+
+@media(max-width : 520px) {
+
+    a {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .nav_btns {
+        padding: 0%;
+        width: 10vw;
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: xx-small;
+        border-radius: 4px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+}
+
+@media(min-width : 520px) and (max-width : 900px) {
+    .nav_btns {
+        font-size: x-small;
+        background-color: red;
+    }
+}
+
+
+
+
+/* Main body of login page */
+
+#maincontainer {
+    background-color: rgba(0, 0, 0, 0.176);
+    border-radius: 2%;
+    height: 80vh;
+    width: 30vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 35vw;
+    top: 5vh;
+    
+}
+
+#login {
+
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Lato", sans-serif;
+    font-weight: 820;
+    font-style: italic;
+    margin-bottom: 5vh;
+}
+
+form {
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10%;
+    margin: 5vh auto;
+}
+
+.textbars {
+    width: 99%;
+    height: 20px;
+    margin: 1vh auto;
+}
+
+label {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+@media(max-width : 520px) {
+    
+    #login{
+        font-size: 22px;
+    }
+
+   label{
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+   }
+}
+

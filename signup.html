@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup-style.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="navtags">
+                <li><a href="#"><img id="logo"
+                            src="https://internationalkenpo.com/wp-content/uploads/sites/27/2024/01/International-Black-Belt-Studio-Shareable-logo.webp"
+                            alt=""></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <input class="nav_btns" id="login_btn" type="button" value="Login"
+                        onclick="location.href='login.html'">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="maincontainer">
+            <form id="formbody" action="post">
+                <h3 id="login">Login</h3>
+                <label for="firstname">First Name:</label>
+                <input class="textbars" type="text" name="firstname" id="firstname">
+                <br>
+                <label for="secondname">Second Name:</label>
+                <input class="textbars" type="text" name="secondname" id="secondname">
+                <br>
+                <label for="password">password</label>
+                <input class="textbars" type="password" name="pass" id="pass">
+                <br>
+                <label for="confirmpass">Confirm password</label>
+                <input class="textbars" type="password" name="confirmpass" id="confirmpass">
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

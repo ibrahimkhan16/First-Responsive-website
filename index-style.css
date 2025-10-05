@@ -1,0 +1,223 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    min-height: 100vh;
+    /* ensure full height */
+    background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?_gl=1*zdndey*_ga*MTMwMDE0ODA1MS4xNzU4MDgyMjc0*_ga_8JE65Q40S6*czE3NTkyMzgyMTQkbzIkZzEkdDE3NTkyMzg3MTAkajEzJGwwJGgw");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navbar {
+    background-color: rgb(14, 14, 71);
+    /* background-color: #131A22; */
+    height: 9vh;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+#logo {
+    width: 150px;
+    position: relative;
+    bottom: 30%;
+    height: 70px;
+
+}
+
+a:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.854);
+    font-size: large;
+}
+
+#navtags {
+    position: relative;
+    top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_btns {
+    padding: 2px;
+    width: 6vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    /* background-color: rgb(0, 81, 255); */
+    background-color: #42b72a;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.nav_btns:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* top: 2vh; */
+}
+
+@media(max-width : 520px) {
+
+    a {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .nav_btns {
+        padding: 0%;
+        width: 10vw;
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: xx-small;
+        border-radius: 4px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+}
+
+@media(min-width : 520px) and (max-width : 900px) {
+    .nav_btns {
+        font-size: x-small;
+        background-color: red;
+    }
+}
+
+/* MAIN BODY */
+#container {
+
+    max-width: 90vw;
+    height: auto;
+    margin: 2vh auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.card_container {
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 3%;
+    flex: 1 1 30%;
+    min-width: 200px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.card_container:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.854);
+}
+
+#card1 {
+    background-image: url("https://www.searchenginejournal.com/wp-content/uploads/2021/10/responsive-web-design-1-61f01c4b64c5f-sej-1280x720.png");
+    
+}
+
+#card2 {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2020/CategoryCards/mp_20200604_fashion_desktopsinglecategory_desktop_758x608._SY608_CB430707313_.jpg");
+}
+
+#card3 {
+
+    background-image: url("https://as2.ftcdn.net/v2/jpg/05/27/29/95/1000_F_527299569_vYLOucMAr1oz52CRaQbZNC3tIjtiEwaY.jpg");
+}
+
+
+
+/* Changing the images in responsive design  */
+@media(max-width : 520px) {
+    #card1 {
+        background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20240725160809/what-is-Responsive-Design.webp");
+    }
+
+    #card2 {
+        background-image: url("https://i.pinimg.com/1200x/d4/f9/ca/d4f9ca31b532cfb7d1564273abb55dee.jpg");
+    }
+
+    #card3 {
+
+        background-image: url("https://i.pinimg.com/1200x/2d/db/1b/2ddb1bae4638537aad1071ce45e926e3.jpg");
+    }
+
+    .heading3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-style: italic;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+    }
+}
+
+
+
+/* ctyle for Lines below 3 cards  */
+.heading3 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+.heading3::before {
+    content: "👉 ";
+}
+.para {
+    max-width: 90vw;
+    margin: 2vh auto;
+}
+
+p {
+    font-style: italic;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+}
